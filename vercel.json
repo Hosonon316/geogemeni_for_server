@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/myapi.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "public/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "env": {
+      "GOOGLE_MAPS_API_KEY": "@google_maps_api_key"
+    }
+  }
+  
